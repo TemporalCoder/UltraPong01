@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UltraPong01", "UltraPong01\UltraPong01.csproj", "{3C1668B1-D265-4BCF-9CAA-BAB635F6D02C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3C1668B1-D265-4BCF-9CAA-BAB635F6D02C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C1668B1-D265-4BCF-9CAA-BAB635F6D02C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C1668B1-D265-4BCF-9CAA-BAB635F6D02C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C1668B1-D265-4BCF-9CAA-BAB635F6D02C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0ED236A7-9383-4A4A-9FB1-6A303FD6B730}
+	EndGlobalSection
+EndGlobal
