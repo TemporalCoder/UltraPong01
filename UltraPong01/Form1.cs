@@ -25,7 +25,7 @@ namespace UltraPong01
         int byv = 5;
 
         //Player 1
-        int p1x = 10;
+        int p1x = 30;
         int p1y = 200;
         int p1h = 50; //height! 
 
@@ -37,6 +37,8 @@ namespace UltraPong01
         public Form1()
         {
             InitializeComponent();
+            
+
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -50,10 +52,16 @@ namespace UltraPong01
             //update player positions
 
 
+            //check p1 <--> ball collision
+            if(bxv<0 && bx<p1x+10 && by>p1y && by+20 < p1y+p1h)
+            {
+                bxv *= -1; bx += bxv;
+            }
+
             //get serial Data
             if (serialOpen)
             {
-                p1y = getSerialData();
+              //  p1y = getSerialData();
             }
            
             Refresh(); //calls the paint function
@@ -104,6 +112,11 @@ namespace UltraPong01
         private void button1_Click(object sender, EventArgs e)
         {
             startSerial();
+        }
+
+        private void pictureBox1_MouseMove(object sender, MouseEventArgs e)
+        {
+            p1y = (int)e.Y;
         }
     }
 }
